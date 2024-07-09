@@ -1,1 +1,0 @@
-C:\Users\siyon\source\repos\android\android\android.csproj;x64
