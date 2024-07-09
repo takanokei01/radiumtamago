@@ -8,6 +8,10 @@
             Text="東日本大震災"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Image Source="home.png"
+               HeightRequest="100"
+               Aspect="AspectFill"/>
+
         <Image
             Source="dotnet_bot.png"
             HeightRequest="120"
