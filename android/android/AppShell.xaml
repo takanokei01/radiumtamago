@@ -12,8 +12,43 @@
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     <ShellContent
-        Title="Sub"
+        Title="Sub1"
         ContentTemplate="{DataTemplate local:NewPage1}"
         Route="NewPage1" />
-
+    <ShellContent
+        Title="Sub2"
+        ContentTemplate="{DataTemplate local:Page2}"
+        Route="Page2" />
+    <ShellContent
+       Title="Sub3"
+       ContentTemplate="{DataTemplate local:Page3}"
+       Route="Page3" />
+    <ShellContent
+       Title="Sub4"
+       ContentTemplate="{DataTemplate local:Page4}"
+       Route="Page4" />
+    <ShellContent
+       Title="Sub5"
+       ContentTemplate="{DataTemplate local:Page5}"
+       Route="Page5" />
+    <ShellContent
+       Title="Sub6"
+       ContentTemplate="{DataTemplate local:Page6}"
+       Route="Page6" />
+    <ShellContent
+       Title="Sub7"
+       ContentTemplate="{DataTemplate local:Page7}"
+       Route="Page7" />
+    <ShellContent
+       Title="Sub8"
+       ContentTemplate="{DataTemplate local:Page8}"
+       Route="Page8" />
+    <ShellContent
+       Title="Sub9"
+       ContentTemplate="{DataTemplate local:Page9}"
+       Route="Page9" />
+    <ShellContent
+       Title="Sub10"
+       ContentTemplate="{DataTemplate local:Page10}"
+       Route="Page10" />
 </Shell>
