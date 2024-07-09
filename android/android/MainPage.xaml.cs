@@ -20,6 +20,11 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+        private async void OnClicked(object sender, EventArgs e)
+        {
+            // サブページへ移動
+            await Shell.Current.GoToAsync("//NewPage1");
+        }
     }
 
 }

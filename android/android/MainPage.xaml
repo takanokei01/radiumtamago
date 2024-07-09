@@ -5,11 +5,12 @@
 
     <ScrollView>
         <VerticalStackLayout
+
             Padding="30,0"
             Spacing="25">
             <Image
                 Source="dotnet_bot.png"
-                HeightRequest="1205"
+                HeightRequest="120"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
@@ -30,6 +31,12 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="NextBtn"
+                Text="つぎへ"                 
+                Clicked="OnClicked"
+                HorizontalOptions="Fill" />
+            
         </VerticalStackLayout>
     </ScrollView>
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="android.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout>
+        <Label 
+            Text="東日本大震災"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image
+            Source="dotnet_bot.png"
+            HeightRequest="120"
+            Aspect="AspectFit"
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+        <Button
+            x:Name="NextBtn"
+            Text="つぎへ"                 
+            Clicked="OnClicked"
+            HorizontalOptions="Fill" /> 
+    </VerticalStackLayout>
+</ContentPage>
