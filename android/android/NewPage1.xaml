@@ -15,20 +15,16 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>            
-        </Grid.RowDefinitions>
+        </Grid.RowDefinitions>       
 
-        
-        
-
-        
-        <Image  Grid.Column ="1" Grid.RowSpan="5"
+        <Image  Grid.ColumnSpan ="3" Grid.RowSpan="5"
            Source="home.png"          
            Aspect="AspectFill" />
         <Button Grid.Column="1" Grid.Row="4"       
             Text="進む"
             TextColor="Black"
             WidthRequest="100"
-            HeightRequest="10"
+            HeightRequest="40"
             Clicked="OnClicked"
             Background="White"/>
         <Label  Grid.Column ="1" Grid.Row="3"
@@ -37,8 +33,6 @@
             FontSize="50"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-
-
 
     </Grid>
 </ContentPage>

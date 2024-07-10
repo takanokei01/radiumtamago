@@ -3,15 +3,53 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="android.Page2"
              Title="Page2">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Button
-            x:Name="NextBtn"
-            Text="つぎへ"                 
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+       
+        <Image  Grid.Column ="2" Grid.Row="1" 
+        Source="sdesign_00049.png" 
+             WidthRequest="100"
+             HeightRequest="90"
+        Aspect="AspectFill" /> 
+        <Label  Grid.Column ="1" Grid.ColumnSpan="3" Grid.Row="3" Grid.RowSpan="3"
+             Text=" このアプリには東日本大震災の直接的な被害の写真が表示されます。小さなお子様が閲覧する際には保護者と一緒に閲覧するようお願いします。"
+             TextColor="Black"             
+             FontSize="15"/>
+        
+        <Button Grid.Column="1" Grid.Row="4"       
+             Text="進む"
+             TextColor="Black"
+             WidthRequest="100"
+            HeightRequest="40"
             Clicked="OnClicked"
-            HorizontalOptions="Fill" />
-    </VerticalStackLayout>
+            Background="White"/>
+        <Button Grid.Column="3" Grid.Row="4"       
+             Text="終了"
+             TextColor="Black"
+             WidthRequest="100"
+             HeightRequest="10"
+             Clicked="OnClicked"              
+             Background="White"
+             BorderWidth="2" BorderColor="Black"/>
+
+
+
+
+
+
+    </Grid>
 </ContentPage>
