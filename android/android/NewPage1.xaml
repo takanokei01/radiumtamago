@@ -3,24 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="android.NewPage1"
              Title="NewPage1">
-    <VerticalStackLayout>
-        <Label 
-            Text="東日本大震災"
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>            
+        </Grid.RowDefinitions>
+
+        
+        
+
+        
+        <Image  Grid.Column ="1" Grid.RowSpan="5"
+           Source="home.png"          
+           Aspect="AspectFill" />
+        <Button Grid.Column="1" Grid.Row="4"       
+            Text="進む"
+            TextColor="Black"
+            WidthRequest="100"
+            HeightRequest="10"
+            Clicked="OnClicked"
+            Background="White"/>
+        <Label  Grid.Column ="1" Grid.Row="3"
+            Text="東日本大震災を忘れないために"
+            TextColor="White"
+            FontSize="50"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Image Source="home.png"
-               HeightRequest="100"
-               Aspect="AspectFill"/>
 
-        <Image
-            Source="dotnet_bot.png"
-            HeightRequest="120"
-            Aspect="AspectFit"
-            SemanticProperties.Description="dot net bot in a race car number eight" />
-        <Button
-            x:Name="NextBtn"
-            Text="つぎへ"                 
-            Clicked="OnClicked"
-            HorizontalOptions="Fill" /> 
-    </VerticalStackLayout>
+
+
+    </Grid>
 </ContentPage>
