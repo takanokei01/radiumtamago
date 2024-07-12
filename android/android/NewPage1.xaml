@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="android.NewPage1"
              Title="NewPage1">
+    <ScrollView>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -35,4 +36,5 @@
             HorizontalOptions="Center" />
 
     </Grid>
+    </ScrollView>
 </ContentPage>

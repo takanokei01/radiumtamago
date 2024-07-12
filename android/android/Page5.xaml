@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="android.Page5"
              Title="Page5">
-
-    <Grid>
-        <Grid.ColumnDefinitions>
+    <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -55,5 +55,6 @@
           Background="White"
           BorderWidth="2" BorderColor="Black"/>
 
-    </Grid>
+        </Grid>
+    </ScrollView>
 </ContentPage>

@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="android.Page3"
-             Title="Page3">   
-    <Grid>
-        <Grid.ColumnDefinitions>
+             Title="Page3">
+    <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -51,6 +52,6 @@
              Clicked="OnClicked2"              
              Background="White"
              BorderWidth="2" BorderColor="Black"/>
-
-    </Grid>
+        </Grid>
+    </ScrollView>
 </ContentPage>

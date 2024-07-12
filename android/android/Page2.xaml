@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="android.Page2"
              Title="Page2">
-    <Grid>
-        <Grid.ColumnDefinitions>
+    <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -47,5 +48,6 @@
              Clicked="OnClicked2"              
              Background="White"
              BorderWidth="2" BorderColor="Black"/>
-    </Grid>
+        </Grid>
+    </ScrollView>
 </ContentPage>
