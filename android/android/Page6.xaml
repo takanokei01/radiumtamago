@@ -3,15 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="android.Page6"
              Title="Page6">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Button
-           x:Name="NextBtn"
-           Text="つぎへ"                 
-           Clicked="OnClicked"
-           HorizontalOptions="Fill" />
-    </VerticalStackLayout>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="6"/>
+
+        <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"
+        Text="そして津波が原因ということもあり、被害が大きくなってしまったのが火災です。"
+            FontSize="20"/>
+        
+        <Image Grid.Row="1" Grid.Column="1" Grid.RowSpan="4" Grid.ColumnSpan="4"
+            WidthRequest="800"
+            Source="fire.jpg" />
+
+        <Label  Grid.Column ="1" Grid.ColumnSpan="3" Grid.Row="4" Grid.RowSpan="3"
+          Text="津波の被害が大きかった宮城県を中心に、330件もの火災が発生しました。火災原因のうち津波火災は全体の40%ですが、津波浅井は津波によってプロパンガスや危険物といった火種になるものが山や高台に集まり、一緒に漂流してきた家具や自然物ン位着火するので被害が大きくなりやすく、また都心部でも多く発生したため、被害が大きくなり、さらに長期的に発生しました。"
+          TextColor="Black"             
+          FontSize="20"/>
+
+        <Button Grid.Column="1" Grid.Row="5"       
+          Text="進む"
+          TextColor="Black"
+          WidthRequest="100"
+         HeightRequest="40"
+         Clicked="OnClicked"
+         Background="White"
+         BorderWidth="2" BorderColor="Black"/>
+        <Button Grid.Column="3" Grid.Row="5"       
+          Text="終了"
+          TextColor="Black"
+          WidthRequest="100"
+          HeightRequest="10"
+          Clicked="OnClicked2"              
+          Background="White"
+          BorderWidth="2" BorderColor="Black"/>
+
+    </Grid>
 </ContentPage>
