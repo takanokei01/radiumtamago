@@ -19,7 +19,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-       
+        <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
+
         <Image  Grid.Column ="2" Grid.Row="1" 
         Source="sdesign_00049.png" 
              WidthRequest="100"
@@ -36,20 +37,15 @@
              WidthRequest="100"
             HeightRequest="40"
             Clicked="OnClicked"
-            Background="White"/>
+            Background="White"
+            BorderWidth="2" BorderColor="Black"/>
         <Button Grid.Column="3" Grid.Row="4"       
              Text="終了"
              TextColor="Black"
              WidthRequest="100"
              HeightRequest="10"
-             Clicked="OnClicked"              
+             Clicked="OnClicked2"              
              Background="White"
              BorderWidth="2" BorderColor="Black"/>
-
-
-
-
-
-
     </Grid>
 </ContentPage>
