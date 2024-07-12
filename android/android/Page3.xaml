@@ -20,7 +20,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
+        <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="6"/>
 
         <Label Grid.Column="1" Grid.ColumnSpan="3"
            Text="2011年3月11日、14時26分に、三陸沖を震源とするM9.0の地震が発生しました。"
