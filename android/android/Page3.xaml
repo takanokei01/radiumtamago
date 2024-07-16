@@ -11,6 +11,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -19,24 +20,27 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="6"/>
+        <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="9"/>
 
         <Label Grid.Column="1" Grid.ColumnSpan="3"
            Text="2011年3月11日、14時26分に、三陸沖を震源とするM9.0の地震が発生しました。"
-               FontSize="20"/>
+               FontSize="15"/>
         <Image Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3"
-               WidthRequest="350"
+               WidthRequest="200"
                Source="naturaldisaster2301.jpg" />
-
+           
         
         <Label  Grid.Column ="1" Grid.ColumnSpan="3" Grid.Row="4" Grid.RowSpan="3"
              Text=" 東北地方を中心に激しい揺れに見舞われ、宮城県栗原市では'震度7'を観測し、甚大な被害をもたらしました。"
              TextColor="Black"             
-             FontSize="20"/>
+             FontSize="15"/>
 
-        <Button Grid.Column="1" Grid.Row="5"       
+        <Button Grid.Column="1" Grid.Row="7"       
              Text="進む"
              TextColor="Black"
              WidthRequest="100"
@@ -44,8 +48,8 @@
             Clicked="OnClicked"
             Background="White"
             BorderWidth="2" BorderColor="Black"/>
-        <Button Grid.Column="3" Grid.Row="5"       
-             Text="終了"
+        <Button Grid.Column="3" Grid.Row="7"       
+             Text="戻る"
              TextColor="Black"
              WidthRequest="100"
              HeightRequest="10"

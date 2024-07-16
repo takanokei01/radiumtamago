@@ -48,7 +48,7 @@
          Background="White"
          BorderWidth="2" BorderColor="Black"/>
         <Button Grid.Column="3" Grid.Row="7"       
-          Text="終了"
+          Text="戻る"
           TextColor="Black"
           WidthRequest="100"
           HeightRequest="10"

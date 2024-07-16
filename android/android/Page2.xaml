@@ -23,9 +23,7 @@
         <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
 
         <Image  Grid.Column ="2" Grid.Row="1" 
-        Source="sdesign_00049.png" 
-             WidthRequest="100"
-             HeightRequest="90"
+        Source="sdesign_00049.png"               
         Aspect="AspectFill" /> 
         <Label  Grid.Column ="1" Grid.ColumnSpan="3" Grid.Row="3" Grid.RowSpan="3"
              Text=" このアプリには東日本大震災の直接的な被害の写真が表示されます。小さなお子様が閲覧する際には保護者と一緒に閲覧するようお願いします。"
@@ -35,7 +33,7 @@
         <Button Grid.Column="1" Grid.Row="4"       
              Text="進む"
              TextColor="Black"
-             WidthRequest="100"
+            WidthRequest="100"
             HeightRequest="40"
             Clicked="OnClicked"
             Background="White"
