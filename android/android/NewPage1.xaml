@@ -6,9 +6,9 @@
     <ScrollView>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="6*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -28,10 +28,10 @@
             HeightRequest="40"
             Clicked="OnClicked"
             Background="White"/>
-        <Label  Grid.Column ="1" Grid.Row="3"
+        <Label  Grid.Column ="0" Grid.Row="3" Grid.ColumnSpan="3"
             Text="東日本大震災を忘れないために"
             TextColor="White"
-            FontSize="50"
+            FontSize="20"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 

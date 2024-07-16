@@ -24,17 +24,18 @@
 
         <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="7"/>
 
-        <Image Grid.Column="0"  Grid.Row="0" Grid.RowSpan="4"  Grid.ColumnSpan="3"
-               WidthRequest="300"
+        <Image Grid.Column="1"  Grid.Row="0" Grid.RowSpan="3"  Grid.ColumnSpan="3"
+               WidthRequest="200"
                Source="images.jpg" />
 
-        <Image Grid.Column="2" Grid.Row="0" Grid.RowSpan="4" Grid.ColumnSpan="3"
-            WidthRequest="300"
+        <Image Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="3"
+            WidthRequest="200"
             Source="lat21611311811.jpg" />
         
-        <Label Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3"
+        <Label Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5"
             Text="東日本大震災で一番被害があったのは津波です。福島県相馬市では9.3m以上、岩手県宮古市では8.5m以上の津波が観測され、宮城県女川漁港では14.8mの津波痕跡も確認されています。また、海面から40m上の陸地でも津波が確認されており、甚大な被害をもたらしました。"
-                FontSize="20"/>
+               TextColor="Black"
+                FontSize="15"/>
 
 
 
@@ -50,7 +51,7 @@
           Text="戻る"
           TextColor="Black"
           WidthRequest="100"
-          HeightRequest="10"
+          HeightRequest="40"
           Clicked="OnClicked2"              
           Background="White"
           BorderWidth="2" BorderColor="Black"/>
