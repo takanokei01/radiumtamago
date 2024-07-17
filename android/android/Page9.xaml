@@ -3,16 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="android.Page9"
              Title="Page9">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Button
-           x:Name="NextBtn"
-           Text="つぎへ"                 
-           Clicked="OnClicked"
-           HorizontalOptions="Fill" />
-        
-    </VerticalStackLayout>
+    
+        <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="7"/>
+
+            <Image Grid.Column="1"  Grid.Row="0" Grid.RowSpan="3"  Grid.ColumnSpan="3"
+           WidthRequest="300"
+           Source="hurui.png" />
+
+           
+
+            <Label Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5"
+        Text="当時、避難区域となっていたのは12市町村ありました。その中でも特に、避難指示区域となっていた場所は	震災後しばらくの間高い放射線量によって立ち入りが困難となり、その場所に住んでいた人たちは避難先での生活を余儀なくされました。"
+           TextColor="Black"
+            FontSize="15"/>
+
+            <Button Grid.Column="1" Grid.Row="6"       
+      Text="進む"
+      TextColor="Black"
+      WidthRequest="100"
+     HeightRequest="40"
+     Clicked="OnClicked"
+     Background="White"
+     BorderWidth="2" BorderColor="Black"/>
+            <Button Grid.Column="3" Grid.Row="6"
+                    
+      Text="戻る"
+      TextColor="Black"
+      WidthRequest="100"
+      HeightRequest="40"
+      Clicked="OnClicked2"              
+      Background="White"
+      BorderWidth="2" BorderColor="Black"/>
+        </Grid>
+
+    </ScrollView>
+    
 </ContentPage>
