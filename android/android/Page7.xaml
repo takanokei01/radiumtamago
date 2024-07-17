@@ -26,7 +26,7 @@
         <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="8"/>
 
         <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3"
-        Text="そして津波が原因ということもあり、被害が大きくなってしまったのが火災です。"
+        Text="さらに福島県を襲った事故として福島第一原発爆発事故があります。"
         FontSize="20"/>
 
         <Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="4" Grid.ColumnSpan="3"
@@ -35,7 +35,7 @@
 
 
          <Label  Grid.Column ="0" Grid.ColumnSpan="5" Grid.Row="3" Grid.RowSpan="3"
-        Text="津波の被害が大きかった宮城県を中心に、330件もの火災が発生しました。火災原因のうち津波火災は全体の40%ですが、津波浅井は津波によってプロパンガスや危険物といった火種になるものが山や高台に集まり、一緒に漂流してきた家具や自然物ン位着火するので被害が大きくなりやすく、また都心部でも多く発生したため、被害が大きくなり、さらに長期的に発生しました。"
+        Text="専門的なことが多く含まれているので細かい説明は省きますが、地震によって主な電源供給先がなくなり、津波によって予備電力関係も喪失してしまい、最終的には建物が爆発、福島県の多くの範囲に有害な放射能が放出される結果になりました。"
         TextColor="Black"             
         FontSize="15"/>
 
