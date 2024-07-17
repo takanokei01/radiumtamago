@@ -3,10 +3,68 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="android.Page12"
              Title="Page12">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="8"/>
+
+            <Image Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4"
+            WidthRequest="375"
+            Source="haru.png" />
+
+            <Label  Grid.Column ="1" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="0"
+          Text="                    大震災が発生した場合、&#xa;            被害者にならないようにするために"
+                   
+                    
+          TextColor="Black"      
+                    WidthRequest="450"
+          FontSize="20"/>
+
+            <Label  Grid.Column ="0" Grid.ColumnSpan="3" Grid.Row="1" Grid.RowSpan="1"
+Text="・安全な場所を確保し身の安全をとる&#xa;・頭を守る&#xa;・避難指示が出たら逃げる&#xa;・周囲の状況を確認する&#xa;・連絡を取り合う&#xa;・最低限の貴重品を持つ"
+TextColor="Black"      
+        
+FontSize="15"/>
+            <Label  Grid.Column ="0" Grid.ColumnSpan="4" Grid.Row="4" Grid.RowSpan="1"
+Text="東日本大震災を忘れないようにしましょう"
+TextColor="Black"      
+        WidthRequest="350"
+FontSize="18"/>
+
+
+            <Button Grid.Column="1" Grid.Row="7"       
+          Text="終了"
+          TextColor="Black"
+          WidthRequest="100"
+         HeightRequest="40"
+        
+         Background="White"
+         BorderWidth="2" BorderColor="Black"/>
+            <Button Grid.Column="3" Grid.Row="7"       
+          Text="戻る"
+          TextColor="Black"
+          WidthRequest="100"
+          HeightRequest="40"
+                     Clicked="OnClicked2"
+          Background="White"
+          BorderWidth="2" BorderColor="Black"/>
+
+        </Grid>
+    </ScrollView>
 </ContentPage>

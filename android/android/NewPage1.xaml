@@ -4,37 +4,37 @@
              x:Class="android.NewPage1"
              Title="NewPage1">
     <ScrollView>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>            
-        </Grid.RowDefinitions>       
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        <Image  Grid.ColumnSpan ="3" Grid.RowSpan="5"
+            <Image  Grid.ColumnSpan ="3" Grid.RowSpan="5"
            Source="home.png"          
            Aspect="AspectFill" />
-        <Button Grid.Column="1" Grid.Row="4"       
+            <Button Grid.Column="1" Grid.Row="4"       
             Text="進む"
             TextColor="Black"
             WidthRequest="100"
             HeightRequest="40"
             Clicked="OnClicked"
             Background="White"/>
-        <Label  Grid.Column ="0" Grid.Row="3" Grid.ColumnSpan="3"
+            <Label  Grid.Column ="0" Grid.Row="3" Grid.ColumnSpan="3"
             Text="東日本大震災を忘れないために"
             TextColor="White"
             FontSize="20"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-    </Grid>
+        </Grid>
     </ScrollView>
 </ContentPage>
