@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="android.Page2"
+             x:Class="android.Page10"
              Title="Page10">
+
     <ScrollView>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -10,43 +11,52 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+             
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+             
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
+            <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="8"/>
 
-            <Image  Grid.Column ="2" Grid.Row="1" 
-        Source="sdesign_00049.png"  
-            WidthRequest="+200"
-        Aspect="AspectFill" />
-            <Label  Grid.Column ="0" Grid.ColumnSpan="5" Grid.Row="3" Grid.RowSpan="3"
-             Text=" また、福島県では公共土木施設の復興については99％終了しています。"
-             TextColor="Black"             
-             FontSize="15"/>
+            <Image Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4"
+            WidthRequest="375"
+            Source="atarasii.png" />
 
-            <Button Grid.Column="1" Grid.Row="4"       
-             Text="進む"
-             TextColor="Black"
-            WidthRequest="100"
-            HeightRequest="40"
-            Clicked="OnClicked"
-            Background="White"
-            BorderWidth="2" BorderColor="Black"/>
-            <Button Grid.Column="3" Grid.Row="4"       
-             Text="終了"
-             TextColor="Black"
-             WidthRequest="100"
-             HeightRequest="40"
-             Clicked="OnClicked2"              
-             Background="White"
-             BorderWidth="2" BorderColor="Black"/>
+            <Label  Grid.Column ="0" Grid.ColumnSpan="6" Grid.Row="3" Grid.RowSpan="3"
+          Text="しかし、2024年現在は避難困難区域は7市町村まで減りました。&#xa; 除染作業や、時間経過によって減りつつあります。しかし、まだまだ除染作業が終わることはなく、福島第一原発の廃炉は2120年までかかるといわれています。"
+          TextColor="Black"      
+                    WidthRequest="300"
+          FontSize="15"/>
+
+ 
+            
+            
+            
+            <Button Grid.Column="1" Grid.Row="7"       
+          Text="進む"
+          TextColor="Black"
+          WidthRequest="100"
+         HeightRequest="40"
+         Clicked="OnClicked"
+         Background="White"
+         BorderWidth="2" BorderColor="Black"/>
+            <Button Grid.Column="3" Grid.Row="6"       
+          Text="戻る"
+          TextColor="Black"
+          WidthRequest="100"
+          HeightRequest="40"
+                  
+          Background="White"
+          BorderWidth="2" BorderColor="Black"/>
+
         </Grid>
     </ScrollView>
 </ContentPage>
