@@ -55,4 +55,8 @@
        Title="Sub11"
        ContentTemplate="{DataTemplate local:Page11}"
        Route="Page11" />
+    <ShellContent
+   Title="Sub12"
+   ContentTemplate="{DataTemplate local:Page12}"
+   Route="Page12" />
 </Shell>
