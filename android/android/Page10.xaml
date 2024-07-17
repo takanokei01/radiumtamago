@@ -11,6 +11,8 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                
              
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
@@ -26,7 +28,7 @@
 
             <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="8"/>
 
-            <Image Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4"
+            <Image Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5"
             WidthRequest="375"
             Source="atarasii.png" />
 
@@ -53,7 +55,7 @@
           TextColor="Black"
           WidthRequest="100"
           HeightRequest="40"
-                  
+             Clicked="OnClicked2"
           Background="White"
           BorderWidth="2" BorderColor="Black"/>
 

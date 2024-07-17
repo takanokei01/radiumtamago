@@ -12,8 +12,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -25,18 +24,18 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Border Background="White" Grid.ColumnSpan="7" Grid.RowSpan="7"/>
+        <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="7"/>
 
-        <Label Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="7"
+        <Label Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5"
         Text=" 地震はそれだけでは止まらず、2011年3月11日だけでも最大震度4以上の余震が55回発生し、3月31日まででは113回もの大きな余震が発生しました。"
             TextColor="Black"
             FontSize="15"/>
             
-        <Image Grid.Row="1" Grid.Column="2" Grid.RowSpan="4" Grid.ColumnSpan="3"
+        <Image Grid.Row="1" Grid.Column="1" Grid.RowSpan="4" Grid.ColumnSpan="3"
             WidthRequest="200"
             Source="gareki.png" />
 
-        <Label  Grid.Column ="0" Grid.ColumnSpan="7" Grid.Row="4" Grid.RowSpan="3"
+        <Label  Grid.Column ="0" Grid.ColumnSpan="5" Grid.Row="4" Grid.RowSpan="3"
           Text="2021年に宮城、福島県で発生した最大深度6今日の地震も東日本大震災の余震と言われており、余震活動は年々減ってきていますが、終わったわけではありません。"
           TextColor="Black"             
           FontSize="15"/>
@@ -49,7 +48,7 @@
          Clicked="OnClicked"
          Background="White"
          BorderWidth="2" BorderColor="Black"/>
-        <Button Grid.Column="5" Grid.Row="6"       
+        <Button Grid.Column="3" Grid.Row="6"       
           Text="戻る"
           TextColor="Black"
           WidthRequest="100"

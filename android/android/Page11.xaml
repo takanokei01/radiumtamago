@@ -11,6 +11,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -24,7 +25,7 @@
 
             <Border Background="White" Grid.ColumnSpan="5" Grid.RowSpan="8"/>
 
-            <Image Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4"
+            <Image Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5"
             WidthRequest="375"
             Source="hukkou2.jpg" />
 
@@ -34,7 +35,7 @@
                     WidthRequest="300"
           FontSize="15"/>
 
-            <Image Grid.Row="4" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="4"
+            <Image Grid.Row="4" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2"
 WidthRequest="125"
 Source="zyoukyou.png" />
 
